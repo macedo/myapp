@@ -1,0 +1,16 @@
+curl --request POST \
+     --url https://api-sandbox.capitalos.com/accounts/act_01KV90QQAGQ8VPWPSNG7B7KNQK/cards/ \
+     --header 'Authorization: cos_sk_sbx_2af654c2-06f3-47e3-9ac3-47b6f7b19dc7' \
+     --header 'accept: application/json' \
+     --header 'content-type: application/json' \
+     --header 'x-capitalos-on-behalf-of-user-id: act_user_01KVB2NXAA55W1SFKM85Q1351P'
+     --data '
+{
+  "cardholder": {
+    "firstName": "rafael",
+    "lastName": "macedo",
+    "phone": "+14155552671"
+  },
+  "accountUserId": "act_user_01KVTCFJ31NHJA0X95D05QDWQR"
+}
+'
